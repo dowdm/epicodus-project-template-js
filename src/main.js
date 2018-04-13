@@ -6,7 +6,7 @@ $(function(){
     var goal = $('#goal').val();
     var output = pingPong(goal);
     output.forEach(function(element) {
-      $('solution').append('<li>' + element + '</li>');
+      $('#solution').append('<li>' + element + '</li>');
     });
   });
 });
