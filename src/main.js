@@ -1,16 +1,8 @@
-import { pingPong } from './ping-pong';
+import { project } from './project';
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-$(function(){
-  $('#ping-pong-form').submit(function(event) {
-    event.preventDefault();
-    var goal = $('#goal').val();
-    var output = pingPong(goal);
-    output.forEach(function(element) {
-      $('#solution').append('<li>' + element + '</li>');
-    });
-  });
+$(document).ready(function() {
 });
